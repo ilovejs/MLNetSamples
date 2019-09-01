@@ -1,0 +1,76 @@
+Inferring Columns ...
+Creating Data loader ...
+Loading data ...
+Exploring multiple ML algorithms and settings to find you the best model for ML task: binary-classification
+For further learning check: https://aka.ms/mlnet-cli
+|     Trainer                              Accuracy      AUC    AUPRC  F1-score  Duration #Iteration             |
+[Source=AutoML, Kind=Trace] Channel started
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=AveragedPerceptronBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 1	0.695714075116279	00:00:02.5925516	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=AveragedPerceptronBinary{}  cache=+
+|1    AveragedPerceptronBinary               0.7073   0.7912   0.9061    0.7600       2.6          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SdcaLogisticRegressionBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 2	0.687829996660438	00:00:04.3669971	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SdcaLogisticRegressionBinary{}  cache=+
+|2    SdcaLogisticRegressionBinary           0.6842   0.8333   0.9550    0.7857       4.4          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=LightGbmBinary{}  cache=-
+[Source=AutoML, Kind=Trace] 3	0.673387619109857	00:00:03.5758391	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=LightGbmBinary{}  cache=-
+|3    LightGbmBinary                         0.6471   0.6212   0.7253    0.7273       3.6          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SymbolicSgdLogisticRegressionBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 4	0.665409773706153	00:00:02.2798537	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SymbolicSgdLogisticRegressionBinary{}  cache=+
+|4    SymbolicSgdLogisticRegressionBinary    0.6585   0.7637   0.8918    0.7407       2.3          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LinearSvmBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 5	0.68053651046352	00:00:01.8158363	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LinearSvmBinary{}  cache=+
+|5    LinearSvmBinary                        0.6667   0.6706   0.7436    0.7429       1.8          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{}  cache=-
+[Source=AutoML, Kind=Trace] 6	0.697645796726413	00:00:18.8622885	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{}  cache=-
+|6    FastTreeBinary                         0.7083   0.6889   0.7897    0.7742      18.9          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LbfgsLogisticRegressionBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 7	0.723873025795709	00:00:03.1716697	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LbfgsLogisticRegressionBinary{}  cache=+
+|7    LbfgsLogisticRegressionBinary          0.7273   0.9008   0.9005    0.7692       3.2          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastForestBinary{}  cache=-
+[Source=AutoML, Kind=Trace] 8	0.679963247636705	00:00:11.5808132	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastForestBinary{}  cache=-
+|8    FastForestBinary                       0.7037   0.7784   0.8511    0.7778      11.6          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SgdCalibratedBinary{}  cache=+
+[Source=AutoML, Kind=Trace] 9	0.722121078339427	00:00:02.0045172	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SgdCalibratedBinary{}  cache=+
+|9    SgdCalibratedBinary                    0.7317   0.8049   0.9033    0.7925       2.0          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{NumberOfLeaves:4, MinimumExampleCountPerLeaf:10, NumberOfTrees:20, LearningRate:0.05685883, Shrinkage:0.09137713}  cache=-
+[Source=AutoML, Kind=Trace] 10	0.63446884620624	00:00:03.2160094	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{NumberOfLeaves:4, MinimumExampleCountPerLeaf:10, NumberOfTrees:20, LearningRate:0.05685883, Shrinkage:0.09137713}  cache=-
+|10   FastTreeBinary                         0.6250   0.5185   0.6438    0.7429       3.2          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LbfgsLogisticRegressionBinary{L2Regularization:0.5827391, L1Regularization:0.05182709, OptimizationTolerance:1E-07, HistorySize:5, MaximumNumberOfIterations:1958311490, InitialWeightsDiameter:0.1729615, DenseOptimizer:True}  cache=+
+[Source=AutoML, Kind=Trace] 11	0.728655970425603	00:00:02.0389440	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LbfgsLogisticRegressionBinary{L2Regularization:0.5827391, L1Regularization:0.05182709, OptimizationTolerance:1E-07, HistorySize:5, MaximumNumberOfIterations:1958311490, InitialWeightsDiameter:0.1729615, DenseOptimizer:True}  cache=+
+|11   LbfgsLogisticRegressionBinary          0.7317   0.8077   0.9055    0.8070       2.0          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SgdCalibratedBinary{L2Regularization:1E-07, ConvergenceTolerance:1E-05, NumberOfIterations:20, Shuffle:False}  cache=+
+[Source=AutoML, Kind=Trace] 12	0.725023065692634	00:00:02.1303649	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SgdCalibratedBinary{L2Regularization:1E-07, ConvergenceTolerance:1E-05, NumberOfIterations:20, Shuffle:False}  cache=+
+|12   SgdCalibratedBinary                    0.7368   0.8333   0.9589    0.8387       2.1          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{NumberOfLeaves:29, MinimumExampleCountPerLeaf:1, NumberOfTrees:20, LearningRate:0.02991907, Shrinkage:0.1258977}  cache=-
+[Source=AutoML, Kind=Trace] 13	0.570937551871454	00:00:21.8867161	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{NumberOfLeaves:29, MinimumExampleCountPerLeaf:1, NumberOfTrees:20, LearningRate:0.02991907, Shrinkage:0.1258977}  cache=-
+|13   FastTreeBinary                         0.5556   0.5441   0.5985    0.6250      21.9          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LbfgsLogisticRegressionBinary{L2Regularization:0.5918753, L1Regularization:0.3840744, OptimizationTolerance:0.0001, HistorySize:50, MaximumNumberOfIterations:684731893, InitialWeightsDiameter:0.7834746, DenseOptimizer:True}  cache=+
+[Source=AutoML, Kind=Trace] 14	0.729286520403495	00:00:02.0894483	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=LbfgsLogisticRegressionBinary{L2Regularization:0.5918753, L1Regularization:0.3840744, OptimizationTolerance:0.0001, HistorySize:50, MaximumNumberOfIterations:684731893, InitialWeightsDiameter:0.7834746, DenseOptimizer:True}  cache=+
+|14   LbfgsLogisticRegressionBinary          0.7143   0.7130   0.7520    0.7500       2.1          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SgdCalibratedBinary{L2Regularization:1E-06, ConvergenceTolerance:0.01, NumberOfIterations:1, Shuffle:False}  cache=+
+[Source=AutoML, Kind=Trace] 15	0.658673910787596	00:00:01.9711282	xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} xf=Normalizing{ col=Features:Features} tr=SgdCalibratedBinary{L2Regularization:1E-06, ConvergenceTolerance:0.01, NumberOfIterations:1, Shuffle:False}  cache=+
+|15   SgdCalibratedBinary                    0.6667   0.7000   0.8061    0.7907       2.0          0             |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=TextFeaturizing{ col=SentimentText_tf:SentimentText} xf=ColumnCopying{ col=Features:SentimentText_tf} tr=FastTreeBinary{NumberOfLeaves:4, MinimumExampleCountPerLeaf:1, NumberOfTrees:500, LearningRate:0.04979509, Shrinkage:0.1667873}  cache=-
+
+===============================================Experiment Results=================================================
+------------------------------------------------------------------------------------------------------------------
+|                                                     Summary                                                    |
+------------------------------------------------------------------------------------------------------------------
+|ML Task: binary-classification                                                                                  |
+|Dataset: wikipedia-detox-250-line-data.tsv                                                                      |
+|Label : Sentiment                                                                                               |
+|Total experiment time : 120.40 Secs                                                                             |
+|Total number of models explored: 15                                                                             |
+------------------------------------------------------------------------------------------------------------------
+|                                              Top 5 models explored                                             |
+------------------------------------------------------------------------------------------------------------------
+|     Trainer                              Accuracy      AUC    AUPRC  F1-score  Duration #Iteration             |
+|1    SgdCalibratedBinary                    0.7368   0.8333   0.9589    0.8387       2.1         12             |
+|2    SgdCalibratedBinary                    0.7317   0.8049   0.9033    0.7925       2.0          9             |
+|3    LbfgsLogisticRegressionBinary          0.7317   0.8077   0.9055    0.8070       2.0         11             |
+|4    LbfgsLogisticRegressionBinary          0.7273   0.9008   0.9005    0.7692       3.2          7             |
+|5    LbfgsLogisticRegressionBinary          0.7143   0.7130   0.7520    0.7500       2.1         14             |
+------------------------------------------------------------------------------------------------------------------
+Generated trained model for consumption: /Users/mike/Code/AI/MLNET/myMLApp/wikiBinSentiment/wikiBinSentiment.Model/MLModel.zip
+Generated C# code for model consumption: /Users/mike/Code/AI/MLNET/myMLApp/wikiBinSentiment/wikiBinSentiment.ConsoleApp
+Check out log file for more information: /Users/mike/Code/AI/MLNET/myMLApp/wikiBinSentiment/logs/debug_log.txt

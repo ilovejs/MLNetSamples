@@ -34,7 +34,25 @@ mlnet auto-train \
 --task binary-classification \
 --dataset "wikipedia-detox-250-line-data.tsv" \
 --label-column-name "Sentiment" \
---max-exploration-time 120
+--max-exploration-time 120 \
+-N wikiBinSentiment
+###
+```
+|Dataset: wikipedia-detox-250-line-data.tsv                                                                      |
+|Label : Sentiment                                                                                               |
+|Total experiment time : 120.40 Secs                                                                             |
+|Total number of models explored: 15                                                                             |
+------------------------------------------------------------------------------------------------------------------
+|                                              Top 5 models explored                                             |
+------------------------------------------------------------------------------------------------------------------
+|     Trainer                              Accuracy      AUC    AUPRC  F1-score  Duration #Iteration             |
+|1    SgdCalibratedBinary                    0.7368   0.8333   0.9589    0.8387       2.1         12             |
+|2    SgdCalibratedBinary                    0.7317   0.8049   0.9033    0.7925       2.0          9             |
+|3    LbfgsLogisticRegressionBinary          0.7317   0.8077   0.9055    0.8070       2.0         11             |
+|4    LbfgsLogisticRegressionBinary          0.7273   0.9008   0.9005    0.7692       3.2          7             |
+|5    LbfgsLogisticRegressionBinary          0.7143   0.7130   0.7520    0.7500       2.1         14             |
+------------------------------------------------------------------------------------------------------------------
+```
 
 ### longer time lead to better auc
 
