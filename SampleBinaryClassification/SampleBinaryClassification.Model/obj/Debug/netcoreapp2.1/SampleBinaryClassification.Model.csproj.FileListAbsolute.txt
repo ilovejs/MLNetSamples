@@ -1,0 +1,10 @@
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/bin/Debug/netcoreapp2.1/MLModel.zip
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/bin/Debug/netcoreapp2.1/SampleBinaryClassification.Model.deps.json
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/bin/Debug/netcoreapp2.1/SampleBinaryClassification.Model.dll
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/bin/Debug/netcoreapp2.1/SampleBinaryClassification.Model.pdb
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/Debug/netcoreapp2.1/SampleBinaryClassification.Model.csprojAssemblyReference.cache
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/Debug/netcoreapp2.1/SampleBinaryClassification.Model.csproj.CoreCompileInputs.cache
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/Debug/netcoreapp2.1/SampleBinaryClassification.Model.AssemblyInfoInputs.cache
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/Debug/netcoreapp2.1/SampleBinaryClassification.Model.AssemblyInfo.cs
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/Debug/netcoreapp2.1/SampleBinaryClassification.Model.dll
+/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/Debug/netcoreapp2.1/SampleBinaryClassification.Model.pdb

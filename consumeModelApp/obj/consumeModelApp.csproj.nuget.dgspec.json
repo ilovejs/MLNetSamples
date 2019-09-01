@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/consumeModelApp.csproj": {}
+  },
+  "projects": {
+    "/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/consumeModelApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/consumeModelApp.csproj",
+        "projectName": "consumeModelApp",
+        "projectPath": "/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/consumeModelApp.csproj",
+        "packagesPath": "/Users/mike/.nuget/packages/",
+        "outputPath": "/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mike/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/SampleBinaryClassification.Model.csproj": {
+                "projectPath": "/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/SampleBinaryClassification.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/SampleBinaryClassification.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/SampleBinaryClassification.Model.csproj",
+        "projectName": "SampleBinaryClassification.Model",
+        "projectPath": "/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/SampleBinaryClassification.Model.csproj",
+        "packagesPath": "/Users/mike/.nuget/packages/",
+        "outputPath": "/Users/mike/Code/AI/MLNET/myMLApp/SampleBinaryClassification/SampleBinaryClassification.Model/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mike/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

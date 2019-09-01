@@ -1,0 +1,15 @@
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/MLModel.zip
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/consumeModelApp.deps.json
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/consumeModelApp.runtimeconfig.json
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/consumeModelApp.runtimeconfig.dev.json
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/consumeModelApp.dll
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/consumeModelApp.pdb
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/SampleBinaryClassification.Model.dll
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/bin/Debug/netcoreapp2.2/SampleBinaryClassification.Model.pdb
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.csprojAssemblyReference.cache
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.csproj.CoreCompileInputs.cache
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.AssemblyInfoInputs.cache
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.AssemblyInfo.cs
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.csproj.CopyComplete
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.dll
+/Users/mike/Code/AI/MLNET/myMLApp/consumeModelApp/obj/Debug/netcoreapp2.2/consumeModelApp.pdb
