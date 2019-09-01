@@ -26,8 +26,18 @@ dotnet tool install -g mlnet
 mkdir myMLApp
 cd myMLApp
 dotnet new console -o consumeModelApp
-# train
-mlnet auto-train --task binary-classification --dataset "wikipedia-detox-250-line-data.tsv" --label-column-name "Sentiment" --max-exploration-time 10
+
+# train on small set 250 samples
+wc -l wikipedia-detox-250-line-data.tsv
+
+mlnet auto-train \
+--task binary-classification \
+--dataset "wikipedia-detox-250-line-data.tsv" \
+--label-column-name "Sentiment" \
+--max-exploration-time 120
+
+### longer time lead to better auc
+
 # Construct inference console
 cd consumeModelApp
 dotnet add reference ../SampleBinaryClassification/SampleBinaryClassification.Model/
@@ -38,19 +48,34 @@ dotnet restore
 dotnet run
 ```
 
-### 
+### Taxi fare regression
 
 ```bash
 head -n 10 taxi-fare-train.csv
+
+wc -l taxi-fare-train.csv
+# 100000
 
 vendor_id,rate_code,passenger_count,trip_time_in_secs,trip_distance,payment_type,fare_amount
 CMT,1,1,1271,3.8,CRD,17.5
 CMT,1,1,474,1.5,CRD,8
 
-
-mlnet auto-train 
---task binary-classification
---dataset "taxi-fare-train.csv" 
---label-column-name "fare_amount" 
+mlnet auto-train \
+--task regression \
+--dataset "taxi-fare-train.csv" \
+--label-column-name "fare_amount" \
 --max-exploration-time 30
+
+# result
+------------------------------------------------------------------------------------------------------------------
+|                                              Top 5 models explored                                             |
+------------------------------------------------------------------------------------------------------------------
+|     Trainer                             RSquared Absolute-loss Squared-loss RMS-loss  Duration #Iteration      |
+|1    FastTreeTweedieRegression             0.9495          0.40         4.79     2.19       9.4         14      |
+|2    LightGbmRegression                    0.9472          0.41         5.01     2.24       1.4         15      |
+|3    LightGbmRegression                    0.9451          0.41         5.22     2.28       1.1          2      |
+|4    FastTreeRegression                    0.9440          0.42         5.32     2.31       1.1          3      |
+|5    LightGbmRegression                    0.9383          0.48         5.85     2.42       0.9         12      |
+------------------------------------------------------------------------------------------------------------------
 ```
+
